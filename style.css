@@ -954,6 +954,9 @@ footer {
     background: var(--ink);
     color: white;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 footer p {
@@ -964,10 +967,17 @@ footer p {
 
 footer > small {
     font-size: 10px;
+    justify-content: center;
+    align-items: center;
     color: #9b9992;
 }
 
+.footer-copyright {
+    order: 1;
+}
+
 .footer-contact-links {
+    order: 2;
     display: flex;
     justify-content: center;
     align-items: center;
