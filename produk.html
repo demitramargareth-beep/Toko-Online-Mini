@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>M-Store | Produk</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+
+        <a class="brand" href="index.html">
+            <span class="brand-mark">M</span>
+
+            <span>
+                M-Store
+                <small>STYLE YOUR DAY</small>
+            </span>
+        </a>
+
+        <button class="menu-toggle"
+            onclick="toggleMenu()">
+            ☰
+        </button>
+
+        <nav id="mainNav">
+
+            <a href="index.html">Beranda</a>
+
+            <a class="active" href="produk.html">
+                Produk
+            </a>
+
+            <a href="tentang.html">
+                Tentang Kami
+            </a>
+
+            <a class="nav-cart" href="keranjang.html">
+                Keranjang
+                <span class="cart-count">0</span>
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="page-wrap">
+
+        <!-- PAGE INTRO -->
+        <div class="page-intro">
+
+            <span class="eyebrow">
+                THE COLLECTION
+            </span>
+
+            <h1>Temukan favoritmu.</h1>
+
+            <p>
+                Pilihan fashion terbaik untuk melengkapi gayamu.
+            </p>
+
+        </div>
+
+
+        <!-- CATALOG TOOLS -->
+        <div class="catalog-tools">
+
+            <!-- SEARCH PRODUCT -->
+            <input
+                id="searchInput"
+                type="search"
+                placeholder="Cari nama produk..."
+                oninput="renderProducts()"
+            >
+
+            <!-- CATEGORY FILTER -->
+            <select
+                id="categoryFilter"
+                onchange="renderProducts()"
+            >
+
+                <option value="Semua">
+                    Semua kategori
+                </option>
+
+                <option value="Tas">Tas</option>
+
+                <option value="Sepatu">Sepatu</option>
+
+                <option value="Sandal">Sandal</option>
+
+                <option value="Jam Tangan">Jam Tangan</option>
+
+
+                <option value="Dompet">Dompet</option>
+
+            </select>
+
+        </div>
+
+
+        <!-- PRODUCT SECTION -->
+        <section class="section">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="eyebrow">
+                        PILIHAN UNTUKMU
+                    </span>
+
+                    <h2>Semua Produk</h2>
+
+                    <p id="productCount">
+                        6 produk tersedia
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT GRID -->
+            <div
+                class="product-grid"
+                id="productList"
+            ></div>
+
+
+            <!-- EMPTY MESSAGE -->
+            <div
+                id="emptyMessage"
+                class="empty-message"
+                hidden
+            >
+
+                <h2>Produk tidak ditemukan</h2>
+
+                <p>
+                    Coba cari menggunakan nama produk lainnya.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © 2026 M-Store. Website demo pembelajaran.
+        </p>
+
+    </footer>
+
+</body>
+</html>

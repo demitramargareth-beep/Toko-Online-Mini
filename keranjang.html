@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>M-Store | Keranjang</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+
+        <a class="brand" href="index.html">
+            <span class="brand-mark">M</span>
+
+            <span>
+                M-Store
+                <small>STYLE YOUR DAY</small>
+            </span>
+        </a>
+
+        <button class="menu-toggle" onclick="toggleMenu()">
+            ☰
+        </button>
+
+        <nav id="mainNav">
+            <a href="index.html">Beranda</a>
+            <a href="produk.html">Produk</a>
+            <a href="tentang.html">Tentang Kami</a>
+
+            <a class="active nav-cart" href="keranjang.html">
+                Keranjang
+                <span class="cart-count">0</span>
+            </a>
+        </nav>
+
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="page-wrap">
+
+        <!-- PAGE INTRO -->
+        <div class="page-intro">
+
+            <span class="eyebrow">
+                YOUR SELECTION
+            </span>
+
+            <h1>Keranjang belanja.</h1>
+
+            <p>
+                Periksa kembali produk pilihanmu sebelum checkout.
+            </p>
+
+        </div>
+
+
+        <!-- CART LAYOUT -->
+        <div class="cart-layout">
+
+            <!-- CART ITEMS -->
+            <section
+                id="cartItems"
+                class="cart-items"
+            ></section>
+
+
+            <!-- ORDER SUMMARY -->
+            <aside class="summary-card">
+
+                <h2>Ringkasan belanja</h2>
+
+                <div class="summary-line">
+                    <span>Subtotal</span>
+                    <b id="subtotal">Rp0</b>
+                </div>
+
+                <div class="summary-line">
+                    <span>Ongkos kirim</span>
+                    <b id="shipping">Rp15.000</b>
+                </div>
+
+                <div class="summary-line total">
+                    <span>Total</span>
+                    <b id="total">Rp0</b>
+                </div>
+
+
+                <!-- CHECKOUT BUTTON -->
+                <a
+                    class="btn btn-dark full-btn"
+                    href="checkout.html"
+                >
+                    Lanjut Checkout →
+                </a>
+
+                <a class="back-link" href="produk.html">
+                    ← Lanjut belanja
+                </a>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © 2026 M-Store. Website demo pembelajaran.
+        </p>
+
+    </footer>
+
+</body>
+</html>
